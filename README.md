@@ -34,7 +34,19 @@ pod install
 import FlagshipFeatureFlags
 import OpenFeature
 
-// Your implementation here
+// Initialize the provider
+let config = FlagshipFeatureConfig(
+    baseURL: "https://your-api-url.com",
+    refreshInterval: 300
+)
+let provider = FlagshipOpenFeatureProvider(config: config)
+
+// Register with OpenFeature
+OpenFeatureAPI.shared.setProvider(provider: provider)
+
+// Use the client
+let client = OpenFeatureAPI.shared.getClient()
+let flagValue = client.getBooleanValue(key: "my-flag", defaultValue: false)
 ```
 
 ## License

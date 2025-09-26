@@ -19,12 +19,17 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/dream-sports-labs/flagship-sdk-ios-framework'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '210496608' => 'atharva.kothawade@dream11.com' }
-  s.source           = { :git => 'https://github.com/dream-sports-labs/flagship-sdk-ios-framework.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dream-sports-labs/flagship-sdk-ios-framework', :tag => s.version.to_s }
 
   s.ios.deployment_target = '14.0'
   s.swift_versions        = ['5.7', '5.8', '5.9']
 
-  # Use vendored_frameworks for xcframework
+  # Use vendored_frameworks for pre-built xcframework
   s.vendored_frameworks = 'FlagshipFeatureFlags.xcframework'
+  
+  # Dependencies
   s.dependency 'OpenFeature', '~> 0.3'
+  
+  # Ensure the xcframework is included in the pod
+  s.preserve_paths = 'FlagshipFeatureFlags.xcframework'
 end
