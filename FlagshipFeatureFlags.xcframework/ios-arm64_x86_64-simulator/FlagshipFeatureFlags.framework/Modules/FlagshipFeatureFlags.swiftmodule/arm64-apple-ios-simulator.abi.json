@@ -4362,35 +4362,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateStringFlag3key12defaultValue7contextS2S_SSSDySS04OpenB00K0OGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateStringFlag3key12defaultValue7contextS2S_SSSDySS04OpenB00K0OGSgtF",
+            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateStringFlag3key12defaultValue7contextS2S_SS04OpenB00D7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateStringFlag3key12defaultValue7contextS2S_SS04OpenB00D7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -4425,35 +4411,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC19evaluateBooleanFlag3key12defaultValue7contextSbSS_SbSDySS04OpenB00K0OGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC19evaluateBooleanFlag3key12defaultValue7contextSbSS_SbSDySS04OpenB00K0OGSgtF",
+            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC19evaluateBooleanFlag3key12defaultValue7contextSbSS_Sb04OpenB00D7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC19evaluateBooleanFlag3key12defaultValue7contextSbSS_Sb04OpenB00D7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -4487,35 +4459,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC19evaluateIntegerFlag3key12defaultValue7contexts5Int64VSS_AISDySS04OpenB00K0OGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC19evaluateIntegerFlag3key12defaultValue7contexts5Int64VSS_AISDySS04OpenB00K0OGSgtF",
+            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC19evaluateIntegerFlag3key12defaultValue7contexts5Int64VSS_AI04OpenB00D7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC19evaluateIntegerFlag3key12defaultValue7contexts5Int64VSS_AI04OpenB00D7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -4549,35 +4507,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateDoubleFlag3key12defaultValue7contextSdSS_SdSDySS04OpenB00K0OGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateDoubleFlag3key12defaultValue7contextSdSS_SdSDySS04OpenB00K0OGSgtF",
+            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateDoubleFlag3key12defaultValue7contextSdSS_Sd04OpenB00D7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateDoubleFlag3key12defaultValue7contextSdSS_Sd04OpenB00D7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -4611,35 +4555,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateObjectFlag3key12defaultValue7context04OpenB00K0OSS_AJSDySSAJGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateObjectFlag3key12defaultValue7context04OpenB00K0OSS_AJSDySSAJGSgtF",
+            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateObjectFlag3key12defaultValue7context04OpenB00K0OSS_AjH0D7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC18evaluateObjectFlag3key12defaultValue7context04OpenB00K0OSS_AjH0D7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -4953,35 +4883,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0aB6ClientC19getStringEvaluation3key12defaultValue7contextS2S_SSSDySS04OpenB00J0OGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC19getStringEvaluation3key12defaultValue7contextS2S_SSSDySS04OpenB00J0OGSgtF",
+            "usr": "s:20FlagshipFeatureFlags0aB6ClientC19getStringEvaluation3key12defaultValue7contextS2S_SS04OpenB00G7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC19getStringEvaluation3key12defaultValue7contextS2S_SS04OpenB00G7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -5016,35 +4932,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0aB6ClientC20getBooleanEvaluation3key12defaultValue7contextSbSS_SbSDySS04OpenB00J0OGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC20getBooleanEvaluation3key12defaultValue7contextSbSS_SbSDySS04OpenB00J0OGSgtF",
+            "usr": "s:20FlagshipFeatureFlags0aB6ClientC20getBooleanEvaluation3key12defaultValue7contextSbSS_Sb04OpenB00G7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC20getBooleanEvaluation3key12defaultValue7contextSbSS_Sb04OpenB00G7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -5078,35 +4980,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0aB6ClientC20getIntegerEvaluation3key12defaultValue7contexts5Int64VSS_AISDySS04OpenB00J0OGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC20getIntegerEvaluation3key12defaultValue7contexts5Int64VSS_AISDySS04OpenB00J0OGSgtF",
+            "usr": "s:20FlagshipFeatureFlags0aB6ClientC20getIntegerEvaluation3key12defaultValue7contexts5Int64VSS_AI04OpenB00G7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC20getIntegerEvaluation3key12defaultValue7contexts5Int64VSS_AI04OpenB00G7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -5140,35 +5028,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0aB6ClientC19getDoubleEvaluation3key12defaultValue7contextSdSS_SdSDySS04OpenB00J0OGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC19getDoubleEvaluation3key12defaultValue7contextSdSS_SdSDySS04OpenB00J0OGSgtF",
+            "usr": "s:20FlagshipFeatureFlags0aB6ClientC19getDoubleEvaluation3key12defaultValue7contextSdSS_Sd04OpenB00G7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC19getDoubleEvaluation3key12defaultValue7contextSdSS_Sd04OpenB00G7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -5202,63 +5076,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : OpenFeature.Value]?",
+                "printedName": "(any OpenFeature.EvaluationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : OpenFeature.Value]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Value",
-                        "printedName": "OpenFeature.Value",
-                        "usr": "s:11OpenFeature5ValueO"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "EvaluationContext",
+                    "printedName": "any OpenFeature.EvaluationContext",
+                    "usr": "s:11OpenFeature17EvaluationContextP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0aB6ClientC19getObjectEvaluation3key12defaultValue7context04OpenB00J0OSS_AJSDySSAJGSgtF",
-            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC19getObjectEvaluation3key12defaultValue7context04OpenB00J0OSS_AJSDySSAJGSgtF",
-            "moduleName": "FlagshipFeatureFlags",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "generateHashForFlag",
-            "printedName": "generateHashForFlag(flagName:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags0aB6ClientC19generateHashForFlag8flagNameSiSS_tF",
-            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC19generateHashForFlag8flagNameSiSS_tF",
+            "usr": "s:20FlagshipFeatureFlags0aB6ClientC19getObjectEvaluation3key12defaultValue7context04OpenB00J0OSS_AjH0G7Context_pSgtF",
+            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC19getObjectEvaluation3key12defaultValue7context04OpenB00J0OSS_AjH0G7Context_pSgtF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -6717,7 +6549,7 @@
           {
             "kind": "Function",
             "name": "generateHashForFlag",
-            "printedName": "generateHashForFlag(flagName:)",
+            "printedName": "generateHashForFlag(flagName:targetingKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6730,11 +6562,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20FlagshipFeatureFlags11HashUtilityC08generateD7ForFlag8flagNameSiSS_tFZ",
-            "mangledName": "$s20FlagshipFeatureFlags11HashUtilityC08generateD7ForFlag8flagNameSiSS_tFZ",
+            "usr": "s:20FlagshipFeatureFlags11HashUtilityC08generateD7ForFlag8flagName12targetingKeySiSS_SSSgtFZ",
+            "mangledName": "$s20FlagshipFeatureFlags11HashUtilityC08generateD7ForFlag8flagName12targetingKeySiSS_SSSgtFZ",
             "moduleName": "FlagshipFeatureFlags",
             "static": true,
             "declAttributes": [

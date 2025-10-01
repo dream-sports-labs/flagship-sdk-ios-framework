@@ -144,11 +144,11 @@ public enum VariantValue : Swift.Codable {
 }
 final public class FlagshipEvaluationManager {
   public init(httpTransport: FlagshipFeatureFlags.HttpTransport, coreDataStore: FlagshipFeatureFlags.CoreDataStore, config: FlagshipFeatureFlags.FlagshipFeatureConfig, evaluationPlugin: any FlagshipFeatureFlags.EvaluationProtocol = FlagshipEvaluationPlugin())
-  final public func evaluateStringFlag(key: Swift.String, defaultValue: Swift.String, context: [Swift.String : OpenFeature.Value]?) -> Swift.String
-  final public func evaluateBooleanFlag(key: Swift.String, defaultValue: Swift.Bool, context: [Swift.String : OpenFeature.Value]?) -> Swift.Bool
-  final public func evaluateIntegerFlag(key: Swift.String, defaultValue: Swift.Int64, context: [Swift.String : OpenFeature.Value]?) -> Swift.Int64
-  final public func evaluateDoubleFlag(key: Swift.String, defaultValue: Swift.Double, context: [Swift.String : OpenFeature.Value]?) -> Swift.Double
-  final public func evaluateObjectFlag(key: Swift.String, defaultValue: OpenFeature.Value, context: [Swift.String : OpenFeature.Value]?) -> OpenFeature.Value
+  final public func evaluateStringFlag(key: Swift.String, defaultValue: Swift.String, context: (any OpenFeature.EvaluationContext)?) -> Swift.String
+  final public func evaluateBooleanFlag(key: Swift.String, defaultValue: Swift.Bool, context: (any OpenFeature.EvaluationContext)?) -> Swift.Bool
+  final public func evaluateIntegerFlag(key: Swift.String, defaultValue: Swift.Int64, context: (any OpenFeature.EvaluationContext)?) -> Swift.Int64
+  final public func evaluateDoubleFlag(key: Swift.String, defaultValue: Swift.Double, context: (any OpenFeature.EvaluationContext)?) -> Swift.Double
+  final public func evaluateObjectFlag(key: Swift.String, defaultValue: OpenFeature.Value, context: (any OpenFeature.EvaluationContext)?) -> OpenFeature.Value
   final public func startPolling()
   final public func stopPolling()
   @objc deinit
@@ -160,12 +160,11 @@ final public class FlagshipEvaluationPlugin : FlagshipFeatureFlags.EvaluationPro
 }
 final public class FlagshipFeatureClient {
   public init(config: FlagshipFeatureFlags.FlagshipFeatureConfig)
-  final public func getStringEvaluation(key: Swift.String, defaultValue: Swift.String, context: [Swift.String : OpenFeature.Value]?) -> Swift.String
-  final public func getBooleanEvaluation(key: Swift.String, defaultValue: Swift.Bool, context: [Swift.String : OpenFeature.Value]?) -> Swift.Bool
-  final public func getIntegerEvaluation(key: Swift.String, defaultValue: Swift.Int64, context: [Swift.String : OpenFeature.Value]?) -> Swift.Int64
-  final public func getDoubleEvaluation(key: Swift.String, defaultValue: Swift.Double, context: [Swift.String : OpenFeature.Value]?) -> Swift.Double
-  final public func getObjectEvaluation(key: Swift.String, defaultValue: OpenFeature.Value, context: [Swift.String : OpenFeature.Value]?) -> OpenFeature.Value
-  final public func generateHashForFlag(flagName: Swift.String) -> Swift.Int
+  final public func getStringEvaluation(key: Swift.String, defaultValue: Swift.String, context: (any OpenFeature.EvaluationContext)?) -> Swift.String
+  final public func getBooleanEvaluation(key: Swift.String, defaultValue: Swift.Bool, context: (any OpenFeature.EvaluationContext)?) -> Swift.Bool
+  final public func getIntegerEvaluation(key: Swift.String, defaultValue: Swift.Int64, context: (any OpenFeature.EvaluationContext)?) -> Swift.Int64
+  final public func getDoubleEvaluation(key: Swift.String, defaultValue: Swift.Double, context: (any OpenFeature.EvaluationContext)?) -> Swift.Double
+  final public func getObjectEvaluation(key: Swift.String, defaultValue: OpenFeature.Value, context: (any OpenFeature.EvaluationContext)?) -> OpenFeature.Value
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class FlagshipFeatureConfigManager {
@@ -209,7 +208,7 @@ final public class FlagshipOpenFeatureProvider : OpenFeature.FeatureProvider {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class HashUtility {
-  public static func generateHashForFlag(flagName: Swift.String) -> Swift.Int
+  public static func generateHashForFlag(flagName: Swift.String, targetingKey: Swift.String?) -> Swift.Int
   @objc deinit
 }
 final public class HttpTransport : FlagshipFeatureFlags.Transport {
