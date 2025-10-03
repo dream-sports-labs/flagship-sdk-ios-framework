@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
 import CoreData
+import CryptoKit
 @_exported import FlagshipFeatureFlags
 import Foundation
 import OpenFeature
@@ -151,6 +152,7 @@ final public class FlagshipEvaluationManager {
   final public func evaluateObjectFlag(key: Swift.String, defaultValue: OpenFeature.Value, context: (any OpenFeature.EvaluationContext)?) -> OpenFeature.Value
   final public func startPolling()
   final public func stopPolling()
+  final public func clearFlagCache()
   @objc deinit
 }
 final public class FlagshipEvaluationPlugin : FlagshipFeatureFlags.EvaluationProtocol {
@@ -165,6 +167,7 @@ final public class FlagshipFeatureClient {
   final public func getIntegerEvaluation(key: Swift.String, defaultValue: Swift.Int64, context: (any OpenFeature.EvaluationContext)?) -> Swift.Int64
   final public func getDoubleEvaluation(key: Swift.String, defaultValue: Swift.Double, context: (any OpenFeature.EvaluationContext)?) -> Swift.Double
   final public func getObjectEvaluation(key: Swift.String, defaultValue: OpenFeature.Value, context: (any OpenFeature.EvaluationContext)?) -> OpenFeature.Value
+  final public func clearFlagCache()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class FlagshipFeatureConfigManager {
@@ -243,10 +246,23 @@ public class PollingManager {
   public func stop()
   @objc deinit
 }
+final public class SemverUtility {
+  public init()
+  public static func isSemver(_ version: Swift.String) -> Swift.Bool
+  public static func compareSemver(userVersion: Swift.String, expectedVersion: Swift.String) -> Swift.Int
+  @objc deinit
+}
 public protocol Store {
   func getFeatureFlagRulesConfig(for key: Swift.String) -> [Swift.String : Any]?
   func setFeatureFlagRulesConfig(_ configuration: [Swift.String : Any])
   func clearFeatureFlagRulesConfig()
+}
+@_hasMissingDesignatedInitializers public class TimestampUtility {
+  public static func getStoredTimestamp() -> Swift.Int64?
+  public static func storeTimestamp(_ timestamp: Swift.Int64)
+  public static func hasTimestampChanged(newTimestamp: Swift.Int64) -> Swift.Bool
+  public static func clearTimestamp()
+  @objc deinit
 }
 public protocol Transport {
   func fetchConfig() async throws -> Any

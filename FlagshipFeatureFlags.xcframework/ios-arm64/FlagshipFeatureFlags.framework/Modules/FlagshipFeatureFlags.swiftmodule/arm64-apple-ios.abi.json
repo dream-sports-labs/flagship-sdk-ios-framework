@@ -4618,6 +4618,27 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearFlagCache",
+            "printedName": "clearFlagCache()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FlagshipFeatureFlags0A17EvaluationManagerC14clearFlagCacheyyF",
+            "mangledName": "$s20FlagshipFeatureFlags0A17EvaluationManagerC14clearFlagCacheyyF",
+            "moduleName": "FlagshipFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -5091,6 +5112,27 @@
             "declKind": "Func",
             "usr": "s:20FlagshipFeatureFlags0aB6ClientC19getObjectEvaluation3key12defaultValue7context04OpenB00J0OSS_AjH0G7Context_pSgtF",
             "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC19getObjectEvaluation3key12defaultValue7context04OpenB00J0OSS_AjH0G7Context_pSgtF",
+            "moduleName": "FlagshipFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearFlagCache",
+            "printedName": "clearFlagCache()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FlagshipFeatureFlags0aB6ClientC14clearFlagCacheyyF",
+            "mangledName": "$s20FlagshipFeatureFlags0aB6ClientC14clearFlagCacheyyF",
             "moduleName": "FlagshipFeatureFlags",
             "declAttributes": [
               "Final",
@@ -6542,6 +6584,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "FlagshipFeatureFlags"
+      },
+      {
         "kind": "TypeDecl",
         "name": "HashUtility",
         "printedName": "HashUtility",
@@ -7576,6 +7625,132 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "SemverUtility",
+        "printedName": "SemverUtility",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SemverUtility",
+                "printedName": "FlagshipFeatureFlags.SemverUtility",
+                "usr": "s:20FlagshipFeatureFlags13SemverUtilityC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20FlagshipFeatureFlags13SemverUtilityCACycfc",
+            "mangledName": "$s20FlagshipFeatureFlags13SemverUtilityCACycfc",
+            "moduleName": "FlagshipFeatureFlags",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isSemver",
+            "printedName": "isSemver(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FlagshipFeatureFlags13SemverUtilityC02isD0ySbSSFZ",
+            "mangledName": "$s20FlagshipFeatureFlags13SemverUtilityC02isD0ySbSSFZ",
+            "moduleName": "FlagshipFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "compareSemver",
+            "printedName": "compareSemver(userVersion:expectedVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FlagshipFeatureFlags13SemverUtilityC07compareD011userVersion08expectedH0SiSS_SStFZ",
+            "mangledName": "$s20FlagshipFeatureFlags13SemverUtilityC07compareD011userVersion08expectedH0SiSS_SStFZ",
+            "moduleName": "FlagshipFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20FlagshipFeatureFlags13SemverUtilityC",
+        "mangledName": "$s20FlagshipFeatureFlags13SemverUtilityC",
+        "moduleName": "FlagshipFeatureFlags",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FlagshipFeatureFlags",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Store",
         "printedName": "Store",
         "children": [
@@ -7715,6 +7890,154 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FlagshipFeatureFlags"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TimestampUtility",
+        "printedName": "TimestampUtility",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getStoredTimestamp",
+            "printedName": "getStoredTimestamp()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FlagshipFeatureFlags16TimestampUtilityC09getStoredD0s5Int64VSgyFZ",
+            "mangledName": "$s20FlagshipFeatureFlags16TimestampUtilityC09getStoredD0s5Int64VSgyFZ",
+            "moduleName": "FlagshipFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeTimestamp",
+            "printedName": "storeTimestamp(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FlagshipFeatureFlags16TimestampUtilityC05storeD0yys5Int64VFZ",
+            "mangledName": "$s20FlagshipFeatureFlags16TimestampUtilityC05storeD0yys5Int64VFZ",
+            "moduleName": "FlagshipFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasTimestampChanged",
+            "printedName": "hasTimestampChanged(newTimestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FlagshipFeatureFlags16TimestampUtilityC03hasD7Changed03newD0Sbs5Int64V_tFZ",
+            "mangledName": "$s20FlagshipFeatureFlags16TimestampUtilityC03hasD7Changed03newD0Sbs5Int64V_tFZ",
+            "moduleName": "FlagshipFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearTimestamp",
+            "printedName": "clearTimestamp()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FlagshipFeatureFlags16TimestampUtilityC05clearD0yyFZ",
+            "mangledName": "$s20FlagshipFeatureFlags16TimestampUtilityC05clearD0yyFZ",
+            "moduleName": "FlagshipFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20FlagshipFeatureFlags16TimestampUtilityC",
+        "mangledName": "$s20FlagshipFeatureFlags16TimestampUtilityC",
+        "moduleName": "FlagshipFeatureFlags",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "Transport",
         "printedName": "Transport",
@@ -7807,13 +8130,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/atharva-kothawade\/Desktop\/FeatureFlagRepo\/flagship-sdk\/ios-sdk\/FlagshipFeatureFlags\/FlagshipFeatureFlags\/Classes\/Utils\/HashUtility.swift",
-      "kind": "StringLiteral",
-      "offset": 193,
-      "length": 18,
-      "value": "\"FlagshipSDK_UUID\""
-    },
-    {
       "filePath": "\/Users\/atharva-kothawade\/Desktop\/FeatureFlagRepo\/flagship-sdk\/ios-sdk\/FlagshipFeatureFlags\/FlagshipFeatureFlags\/Classes\/Pluggins\/Http\/HttpTransport.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
@@ -7854,6 +8170,13 @@
       "offset": 349,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/FeatureFlagRepo\/flagship-sdk\/ios-sdk\/FlagshipFeatureFlags\/FlagshipFeatureFlags\/Classes\/Utils\/TimestampUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 154,
+      "length": 27,
+      "value": "\"flagship_config_timestamp\""
     }
   ]
 }
